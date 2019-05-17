@@ -1,0 +1,259 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+/* ---------- navbar style ----------*/
+.main-nav{
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+}
+.logo-group img{
+    max-width: 100%;
+}
+.flex-main-nav{
+    background-color:  rgba(255,255,255,.9);
+    width: 100%;
+}
+.logo-group{
+    max-width: 40%;
+}
+
+#collapsibleNavbar{
+    position: relative;
+}
+ #div-dropdown{
+    display: none;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    min-width: 50%;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
+    z-index: 1;
+}
+#div-dropdown a {
+    color: #aeaeae;
+    display: block;
+    padding: 3% 5%;
+    text-align: left;
+  }
+  #div-dropdown a:hover {
+    text-decoration: none;
+    color: #00b39b;
+    background-color: lightgrey;
+  }
+
+#dropdown-btn:hover #div-dropdown{
+    display: block;
+}
+#career:hover{
+    color: #00b39b;
+}
+/* ---------- section one style ---------- */
+.description img{
+    width:35px;
+    height:35px; 
+}
+.description h3{
+   color:#00b39b;
+   margin:2% 0;
+}
+.description p{
+    color: #747474;
+}
+.description-block{
+    margin:2% 0;
+}
+
+ /* ----------------section-two----------------  */
+.block-patient{
+    background-color:#00ccb1;
+    overflow: hidden;
+}
+#text-patient{
+   color:#b3eeda;
+}
+#title-patient,#title-doctor{
+   color:white;
+}
+.country-btn{
+    background-color: white;
+    color:#333333;
+    padding: 4%;
+   
+}
+.patient-img{
+    width:100%;
+    height:auto;
+    margin-left: 30%;
+}
+.block-doctor{
+    background-color:#3d83df;
+    overflow:hidden;
+}
+#text-doctor{
+    color:#90ccf5;
+}
+#doctor-img{
+    width:100%;
+    height:auto;
+    margin-left: 30%;
+}
+/* ----------------section-three----------------  */
+
+.companies{
+    margin: 5%;
+}
+.companies-text{
+    color:#00b39b;
+}
+.partner div{
+    margin:0 12px;
+}
+/* ----------------section-four---------------- */
+.section-four{
+    background-color:#daf7f6;
+    background-image: url("https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/jcmy9zzlqh682l0my9p3");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 28%;
+    /* position: relative; */
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 650px;
+}
+#statistic{
+    
+    width: 350px;
+    margin-top: 20%;
+    margin-left:15%
+    
+
+}
+.section-four h3,.section-four h4{
+    color:#00b39b;
+}
+.section-four p{
+    color:#747474;
+}
+
+.flag,.patient-card,.visits,.doct{
+
+    width: 220px;
+    height: 250px; 
+}
+.flag *{
+    margin: 6% 0;
+}
+.patient-card *,.visits *,.doct *{
+    margin: 10% 0; 
+}
+
+.spesific-card{
+    margin-top:15%;
+
+}
+.spesific-card-two{
+    margin-top:10%;
+
+}
+.patient-card{
+    margin-top:5%;
+}
+.doct{
+    margin-top:5%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #statistic{
+        width: 300px;
+        margin-left: 0;
+    }
+    .flag,.patient-card,.visits,.doct{
+    
+        width: 180px;
+        height: 200px; 
+    }
+    .patient-card *,.visits *,.doct *{
+        margin: 6% 0; 
+    }
+}
+  @media only screen and (max-width: 768px) {
+    .section-four{
+        height: 700px;
+    }
+    .flag,.patient-card,.visits,.doct{
+        margin:auto;
+        width:100%;
+        height: 130px; 
+    }
+    .flag *,.patient-card *,.visits *,.doct *{
+        margin:0; 
+    }
+    .div-patient-img{
+        margin-top: 4%;
+    }
+   
+    .patient-img{
+        margin-left: 0;
+    }
+    #doctor-img{
+        margin-left: 0;
+    }
+    #statistic{
+        margin: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5%;
+        
+    }
+    #statistic *{
+        text-align: center;
+    }
+    .spesific-card,.patient-card,.doct{
+        margin-top:0;
+    }
+    .spesific-card-two{
+        margin-top:2%;
+    
+    }
+    
+  }
+
+  /* ----------------section-five---------------- */
+  .description-album{
+      margin-top: 5%;
+      background-color: white;
+  }
+  .description-album h3{
+    color:#00b39b;
+  }
+  .description-album p{
+      
+    color:#747474;
+}
+.album{
+    background-color: white !important;
+}
+.deco a{
+text-decoration: none;
+color:#747474;
+}
+/* ----------------footer---------------- */
+.section-footer{
+    font-size: 12px;
+}
+.section-footer p{
+    color: #b3abcd;
+}
+.section-footer a{
+    color: #3d83df;
+}

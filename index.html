@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Docplanner group</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='index-style.css'>
+    <!-- <script src='main.js'></script> -->
+    
+</head>
+<body>
+    
+                    <!-- ----------------navbar---------------- -->          
+    <nav class="navbar navbar-expand-md sticky-top navbar-light main-nav">
+        <div class="d-flex justify-content-around flex-main-nav">
+            <div class="logo-group">
+                        <!-- logo/brand -->
+                <a class="navbar-brand" href="#"><img src="image/logo-group.PNG"></a>
+            </div>
+            <div class="align-self-center flex-grow-1 list-navigation"> 
+                    <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="myfunction()">
+                    <span class="navbar-toggler-icon modif-toggl-icon"></span>
+                </button>
+                    <!-- link list -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-1">
+                            <a class="nav-link" style="color:#00b39b" href="#">About us</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" id="career" href="#">Career</a>
+                        </li>
+                        <li class="nav-item px-1" id="dropdown-btn">
+                            <a class="nav-link" href="#">Departments</a>
+                            <div id="div-dropdown">
+                                <a href="#">Marketing & PR</a>
+                                <a href="#">Customer Success & Sales</a>
+                                <a href="#">IT,Product,Design & UX</a>
+                                <a href="#">Finance & Administration</a>
+                                <a href="#">HR & more</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+                    <!-- ----------------section-one---------------- -->
+    <section class="section-one">
+        <div class="container description">
+            <img class="mx-auto d-block" src="image/logo.png">
+            <h3 class="text-center">Making the healthcare experience more human</h3>
+            <div class="row description-block">
+                <div class="col-sm-6">
+                    <p>We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere.</p>
+                </div>
+                <div class="col-sm-6">
+                    <p>We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                    <!-- ----------------section-two---------------- -->
+    <section class="section-two">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- ----------------card-one---------------- -->
+                    <div class="card block-patient">
+                        <div class="card-body">
+                            <p id="text-patient">For patients</p>
+                            <h3 id="title-patient" >Find a doctor, book a visit and solve any health-related doubt</h3>
+                        </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="dropdown ml-2">
+                                        <button type="button" class="btn btn-sm dropdown-toggle country-btn" data-toggle="dropdown">
+                                            CHOOSE COUNTRY
+                                        </button>
+                                        <div class="dropdown-menu  content-specification">
+                                            <a class="dropdown-item" href="#">CHOOSE COUNTRY</a>
+                                            <a class="dropdown-item" href="#">Argentina</a>
+                                            <a class="dropdown-item" href="#">Australia</a>
+                                            <a class="dropdown-item" href="#">Brazil</a>
+                                            <a class="dropdown-item" href="#">Chile</a>
+                                            <a class="dropdown-item" href="#">Colombia</a>
+                                            <a class="dropdown-item" href="#">Czech</a>
+                                            <a class="dropdown-item" href="#">France</a>
+                                            <a class="dropdown-item" href="#">Italy</a>
+                                            <a class="dropdown-item" href="#">Mexico</a>
+                                            <a class="dropdown-item" href="#">Peru</a>
+                                            <a class="dropdown-item" href="#">Poland</a>
+                                            <a class="dropdown-item" href="#">Portugal</a>
+                                            <a class="dropdown-item" href="#">Spain</a>
+                                            <a class="dropdown-item" href="#">Turkey</a>
+                                            <a class="dropdown-item" href="#">UK</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-8">
+                                    <div class="div-patient-img">
+                                        <img class="patient-img" src="image/screen-marketplace@2x.png">
+                                    </div>
+                                </div>
+                            </div> 
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <!-- ----------------card-two---------------- -->
+                    <div class="card block-doctor">
+                        <div class="card-body" >
+                            <p id="text-doctor">For doctors</p>
+                            <h3 id="title-doctor">Save time managing visits and cut no-shows by half</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4"></div>
+                            <div class="col-sm-12 col-md-12 col-lg-8">
+                                <img id="doctor-img" src="image/screen-saas.png">
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                        <!-- ----------------section-three---------------- -->
+    <section class="section-three">
+        <div class="container">
+            <div class="row companies">
+                <div class="col-md-4">
+                    <div>
+                        <h3 class="companies-text">We are a global company<br> with local culture</h3>
+                    </div>
+                   
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap partner">
+                        <div><a href="#"><img src="image/znanylekarz.PNG" ></a></div>
+                        <div><a href="#"><img src="image/doctoralia.PNG"></a></div>
+                        <div><a href="#"><img src="image/miodottore.PNG"></a></div>
+                        <div><a href="#"><img src="image/doktortakvimi.PNG"></a></div>
+                        <div><a href="#"><img src="image/znanylekar.PNG"></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+                <!-- ----------------section-four---------------- -->
+    <section class="section-four">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-sm-12">
+                    <div id="statistic">
+                        <h3>The world's<br> biggest healthcare platform</h3>
+                        <p class="sec-four-p">We work from 6 offices all over the world, bringing Docplanner Group to life in almost 20 countries.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-7 col-sm-12">
+                    <div class="row text-center ">
+                        <div class="col-md-6 col-sm-12 spesific-card">
+                            <div class="card flag">
+                                <div class="body-card">
+                                    <img class="mx-auto d-block" src="image/flag.png" >
+                                    <h4>Leader in 10 countries</h4>
+                                    <p>Poland, Turkey, Spain, Italy, Czech Republic, Mexico, Brazil, Colombia, Argentina and Chile</p> 
+                                </div>
+                            </div>
+                            <div class="card patient-card">
+                                <div class="body-card">
+                                    <img class="mx-auto d-block" src="image/patients.png">
+                                    <h4>30 million unique patients</h4>
+                                    <p>visit us every month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 spesific-card-two">
+                            <div class="card visits">
+                                <div class="body-card">
+                                    <img class="mx-auto d-block" src="image/visits.png" >
+                                    <h4>1.5 million appointments</h4>
+                                    <p>booked last month</p>
+                                </div>
+                            </div>
+                            <div class="card doct">
+                                <div class="body-card">
+                                    <img class="mx-auto d-block" src="image/doctors.png" >
+                                    <h4>2 million active doctors</h4>
+                                    <p>trust in our solutions</p>
+                                 </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                <!--------------------------- section five ------------------------->
+    <section>
+        <div class=" text-center description-album">
+            <div class="container">
+                <h3>Improve the lives of millions.<br> Change yours forever</h3>
+                <p>More than 1000 team mates share our same vision, goals and passion.<br> With offices in Warsaw, Barcelona, Istanbul, Rome, Mexico City and<br> Curitiba, our search for great talent never stops.</p>
+            </div>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row deco">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="#">
+                                <img class="card-img-top" src="image/warsaw.png" alt="warsaw">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        Warsaw<span class="btn btn-primary btn-sm stretched-link">See openings</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="#">
+                                <img class="card-img-top" src="image/barcelona.png" alt="barcelon">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        Barcelona<span class="btn btn-primary btn-sm stretched-link">See openings</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="#">
+                                <img class="card-img-top" src="image/istanbul.png" alt="Istanbul">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        Istanbul<span class="btn btn-primary btn-sm stretched-link">See openings</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                                <a href="#">
+                                    <img class="card-img-top" src="image/rome.png" alt="Rome">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            Rome<span class="btn btn-primary btn-sm stretched-link">See openings</span>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                                <a href="#">
+                                    <img class="card-img-top" src="image/mexico-city.png" alt="mexico-city">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            Mexico City<span class="btn btn-primary btn-sm stretched-link">See openings</span>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                                <a href="#">
+                                    <img class="card-img-top" src="image/curitiba.png" alt="Curtiba">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            Curtiba<span class="btn btn-primary btn-sm stretched-link">See openings</span>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="section-footer text-center">
+            <p>We are leaders in 10 countries: 
+                <a href="#" target="_blank">Poland</a>,
+                <a href="#" target="_blank">Turkey</a>,
+                <a href="#" target="_blank">Spain</a>,
+                <a href="#" target="_blank">Italy</a>,
+                <a href="#" target="_blank">Czech Republic</a>,
+                <a href="#" target="_blank">Mexico</a>,
+                <a href="#" target="_blank">Colombia</a>,
+                <a href="#" target="_blank">Brazil</a>,
+                <a href="#" target="_blank">Argentina</a> and
+                <a href="#" target="_blank">Chile</a>
+            </p>
+            <p>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.</p>
+            <p>www.docplanner.com © 2019</p>
+        </footer>
+    
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
